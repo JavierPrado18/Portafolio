@@ -8,6 +8,33 @@
 
 @media (max-width: 576px) { 
   
+/*XXXXXXXXXXXXXXXXXXXXX
+home
+XXXXXXXXXXXXXXXXXXXXXXX*/
+
+  .title{
+    
+    left: 5%;
+    top: -6%;
+    z-index: 4;
+    
+  }
+  .title p{
+    
+    margin-top: 5%;
+    
+  }
+  
+  
+  .title h2{
+    margin-bottom: -5%;
+  }
+  
+  h1{
+    border-top: none;
+    border-bottom:  3px solid var(--text-color-white);
+  }
+
   /*letra*/
   .subsection{
     font-size: 1.6rem;
@@ -23,7 +50,7 @@
     position: fixed;
     right: 0;
     top: 0;
-    align-items: center;
+    
     background-color: var(--text-color-blue);
     height: 100%;
     overflow-y: auto;
