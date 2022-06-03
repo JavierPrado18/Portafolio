@@ -1,0 +1,422 @@
+:root{
+    --theme-main:#242635;
+    --theme-secondary-trans: #d1ceca2d;
+    --text-color-blue:#34B0BE;
+    --text-color-white:#FFFFFF;
+    --theme-secondary:#D1CECA;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+div[id]{
+  scroll-margin-top:50px ;
+}
+h2[id]{
+  scroll-margin-top:50px ;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--theme-main);
+    padding-top: 70px;
+    
+    margin: 0;
+  }
+  
+/*Fuentes*/
+.subsection{
+  font-size: 2.5rem;
+  margin-top: 10%;
+}
+
+.subtitle{
+  font-size: 2.8rem;
+  font-weight:600;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--text-color-white);
+  }
+  
+
+  
+
+/*Pra EL MENU DE NAVEGACION*/
+.topheader {
+    position: fixed;
+    background-color: var(--theme-main);
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .topnav {
+    display: flex;
+    justify-content:flex-end;
+  
+    
+    
+    margin-left: 0 auto ;
+  }
+  
+  
+  
+  /* Menu */
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0 30px;
+  }
+  
+  .menu li {
+    padding: 0 10px;
+  }
+  
+  .menu a {
+    color: var(--text-color-white);
+    font-size: 1.5vw;
+    font-weight: 500;
+    line-height: 50px;
+    position: relative;
+  }
+  
+  .menu a::after {
+    content: "";
+    background-color: var(--theme-main);
+    position: absolute;
+    left: 0;
+    top: calc(100% + 4px);
+    width: 100%;
+    height: 4px;
+  
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .menu a.selected::after,
+  .menu a:hover::after {
+    opacity: 0.8;
+  }
+  
+  .menu a:hover {
+    color: var(--text-color-blue);
+  }
+  
+  .open-menu,
+  .close-menu {
+    display: none;
+  }
+  
+  .logotype {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  /*Para el contenido principal*/
+.container{
+  
+  position: relative;
+
+  
+}
+
+
+.bgr-secondary{
+  
+  width:55%;
+  height: 55%;
+  margin: auto;
+  background: var(--theme-secondary-trans);
+  text-align:center;
+  padding-top: 5%;
+  
+  clip-path: circle(50% at 50% 50%);
+}
+.bgr-secondary img{
+  width:73%
+  
+  
+}
+
+.title{
+  background: none;
+  position: absolute;
+  left: 5%;
+  top: 4%;
+  z-index: 4;
+  font-size: 6vw; 
+  font-weight: 600;
+  
+}
+.title p{
+  margin: 0;
+  font-size: 4vw;
+  font-weight: 300;
+  
+}
+
+h1{
+  margin: 0;
+  border-top: 3px solid var(--text-color-white);
+
+}
+
+h3{
+  margin: 0;
+}
+.title h2{
+  margin: 0;
+  padding: 3%;
+  font-size: 6vw;
+  font-weight: 300;
+}
+
+.color-white{
+  color: var(--text-color-white);
+}
+.color-blue{
+  color: var(--text-color-blue);
+}
+
+
+.experience{
+  background: none;
+  position: absolute;
+  right: 8%;
+  top: 6%;
+  font-size: 3.5vw;
+  
+}
+  
+
+.circle-btn{
+  display: inline-block;
+  margin-top: 7%;
+  padding: 5%;
+
+  background-color: var(--theme-secondary);
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+
+  
+  
+}
+
+.circle-btn img{
+  width: 100%;
+  height: 100%;
+  
+}
+
+.logos{
+  
+  margin: auto;
+  width: 60%;
+  background: var(--theme-secondary-trans);
+  border-radius: 10px;
+  padding:3% 10%;
+  text-align: center;
+  
+  
+}
+.logos img{
+  
+  width: 20%;
+  margin: 3% ;
+  padding:0 3%;
+  background: var(--theme-secondary);
+  border-radius: 10px;
+
+   
+}
+.text-center{
+  text-align: center;
+}
+
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+DEscripcion
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+.description{
+  
+  width: 90%;
+  margin: auto;
+  
+
+
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Servicios
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+.services{
+  
+  width: 90%;
+  margin: auto;
+
+}
+.services .slide-service{
+  box-sizing: border-box;
+  min-width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  
+  }
+
+.services-items{
+  
+
+  width: 27%;
+  background: var(--text-color-white);
+  background-image:url(../img/Ellipse\ 14.svg) ;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  
+  padding: 3% 1%;  
+}
+
+/*Habilidades*/
+
+.skills{
+  width: 60%;
+  margin: auto;
+}
+.skill{
+  margin-top: 5%;
+ 
+}
+.skill-name{
+  font-size: 2.5vw;
+  font-weight: 600;
+  color: var(--text-color-white);
+  margin-bottom: 2%;
+}
+.progress-line{
+  height: 1.6vw;
+  background-color: var(--text-color-white);
+  border-radius: 10px;
+}
+.skill-per{
+  height: 100%;
+  background-color:var(--text-color-blue);
+  border-radius: 10px;
+  text-align: right;
+  color: var(--text-color-white);
+  font-size: 2vw;
+  position: relative;
+}
+.skill-per::before{
+  content: attr(per);
+  position: absolute;
+  bottom: 125%;
+  color: var(--text-color-blue);
+}
+
+
+
+/*portafolio*/
+
+.slider{
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
+}
+.slider ul{
+  
+  padding:0;
+  display: flex;
+  width: 200%;
+  animation: change 5s infinite alternate;
+  animation-timing-function: ease-in;
+
+}
+.slider li{
+  width: 100%;
+  list-style: none;
+  
+  
+
+}
+.slider img{
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes change{
+  0%{margin-left: 0;}
+  20%{margin-left: 0;}
+
+  40%{margin-left: -50%;}
+  60%{margin-left:-50%;}
+  
+  80%{margin-left: -100%;}
+  100%{margin-left:-100%;}
+}
+
+/*Contacto*/
+.grid{
+  
+  margin: auto;
+  width: 60%;
+  display: grid;
+  grid-template-columns:40% 40%;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 20%;
+  
+}
+.contact-item{
+  box-sizing: border-box;
+  background-color: var(--text-color-white);
+  background-image: url(../img/Ellipse\ 14.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  
+  padding-top: 10%;
+  word-break: break-all;
+  
+}
+.contact-item img{
+  width: 40%;
+}
+.contact-item p{
+  color: var(--theme-secondary);
+  font-size: 1rem;
+}
+.contact-item h4{
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.mail{
+  grid-column: 2;
+  grid-row: 2;
+
+  
+}
+
+
+/*footer*/
+footer{
+  width: 100%;
+  margin-top: 10%;
+  background: var(--theme-secondary-trans) ;
+  font-size: 3vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:5% 0;
+    
+}
+
