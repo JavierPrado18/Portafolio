@@ -99,17 +99,30 @@ a {
     transition: opacity 0.3s;
   }
   
-  .menu a.selected::after,
-  .menu a:hover::after {
+  .menu a.selected::after,.menu a:hover::after {
     opacity: 0.8;
   }
   
-  .menu a:hover {
-    color: var(--text-color-blue);
-  }
+.menu a::before{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--text-color-blue);
+    position: absolute;
+    bottom: -5px;
+    transition: all .7s;
   
-  .open-menu,
-  .close-menu {
+
+  }
+.menu a:hover::before {
+    width: 100%;
+  }
+.menu a:hover{
+  color: var(--text-color-blue);
+  transition: all 0.7s;
+}
+  
+.open-menu,.close-menu {
     display: none;
   }
   
@@ -119,7 +132,9 @@ a {
   }
   
   
-  /*Para el contenido principal*/
+  /*XXXXXXXXXXXXXXXXXXXXXXXXXXX
+  Para el contenido principal
+  XXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 .container{
   
   position: relative;
@@ -286,7 +301,9 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
   padding: 3% 1%;  
 }
 
-/*Habilidades*/
+/*XXXXXXXXXXXXXXX
+Habilidades
+XXXXXXXXXXXXXXXXX*/
 
 .skills{
   width: 60%;
@@ -325,7 +342,9 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 
 
 
-/*portafolio*/
+/*XXXXXXXXXXXXXX
+portafolio
+XXXXXXXXXXXXXXXX*/
 
 .slider{
   width: 95%;
@@ -364,7 +383,11 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
   100%{margin-left:-100%;}
 }
 
-/*Contacto*/
+/*XXXXXXXXXXXXXXXXXXXXXXXX
+Contacto
+XXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+
 .grid{
   
   margin: auto;

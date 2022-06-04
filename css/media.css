@@ -85,7 +85,14 @@ XXXXXXXXXXXXXXXXXXXXXXX*/
   .close-menu {
     align-self: flex-end;
     padding: 9px 0px;
+
     
+  }
+  .close-menu img:hover{
+    border-radius: 50%;
+    background-color: var(--theme-main);
+    
+    transition: all 0.7s;
   }
 
   .menu_opened {
@@ -103,10 +110,20 @@ XXXXXXXXXXXXXXXXXXXXXXX*/
     content: none;
   }
 
+  .menu a::before{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--theme-main);
+    position: absolute;
+    bottom: -5px;
+    transition: all .7s;
+  
+  }
   .menu a:hover,
   .menu a.selected {
     color: var(--theme-main);
-    border-bottom: 2px solid var(--theme-main);
+    transition: all .7s;
   }
 
   /*Servicios*/
