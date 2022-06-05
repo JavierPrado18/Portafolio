@@ -6,6 +6,39 @@
   --theme-secondary:#D1CECA;
 }
 
+@media (max-width: 992px) {
+  .grid{
+    width: 70%;
+  }
+  
+}
+
+@media (max-width: 768px){
+  .menu a {
+  
+    font-size: .8rem;
+  }
+  
+  .grid{
+    width: 80%;
+  }
+  
+  .mail p{
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 598px){
+  .menu a {
+    
+    font-size: .7rem;
+    
+  }
+  .mail p{
+    font-size: 0.8rem;
+  }
+}
+
 @media (max-width: 576px) { 
   
 /*XXXXXXXXXXXXXXXXXXXXX
@@ -23,11 +56,6 @@ XXXXXXXXXXXXXXXXXXXXXXX*/
     
     margin-top: 5%;
     
-  }
-  
-  
-  .title h2{
-    margin-bottom: -5%;
   }
   
   h1{
@@ -50,15 +78,15 @@ XXXXXXXXXXXXXXXXXXXXXXX*/
     position: fixed;
     right: 0;
     top: 0;
-    
+    text-align: center; 
     background-color: var(--text-color-blue);
     height: 100%;
     overflow-y: auto;
-  
+    width: 100%;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s;
-    
+    padding: 0;
   }
 
   .menu li {
@@ -84,7 +112,7 @@ XXXXXXXXXXXXXXXXXXXXXXX*/
 
   .close-menu {
     align-self: flex-end;
-    padding: 9px 0px;
+    padding: 9px 25px;
 
     
   }
@@ -92,12 +120,13 @@ XXXXXXXXXXXXXXXXXXXXXXX*/
     border-radius: 50%;
     background-color: var(--theme-main);
     
-    transition: all 0.7s;
+    
   }
 
   .menu_opened {
     opacity: 1;
-    pointer-events: all;
+    pointer-events: all ;
+    
     
   }
 
@@ -110,20 +139,13 @@ XXXXXXXXXXXXXXXXXXXXXXX*/
     content: none;
   }
 
-  .menu a::before{
-    content: "";
-    width: 0;
-    height: 2px;
-    background-color: var(--theme-main);
-    position: absolute;
-    bottom: -5px;
-    transition: all .7s;
+
   
-  }
+  
   .menu a:hover,
   .menu a.selected {
     color: var(--theme-main);
-    transition: all .7s;
+    border-bottom: 2px solid var(--theme-main);
   }
 
   /*Servicios*/
@@ -220,15 +242,23 @@ XXXXXXXXXXXXXXXXXXXXXXX*/
   margin-top: 10%;
 }
 .mail{
-  margin-left: 40%;
+  margin-left: 39.5%;
 
-  
-  
 }
 .grid p{
-  font-size: 1.5rem;
+  font-size: 0.9rem;
 }
-/* // Medium devices (tablets, 768px and up)*/
+
+@media (max-width: 464px) { 
+  
+  .contact-item{
+    width: 85%;
+    margin: auto;
+  }
+  .mail{
+    margin-top: 10%;
+  }
+ }
 
 
 /*// Large devices (desktops, 992px and up)
