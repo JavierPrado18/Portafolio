@@ -141,19 +141,20 @@ XXXXXXXXXXXXXXXXXX*/
 .container{
   
   position: relative;
-
+  padding-bottom: 14%;
   
 }
 
 
 .bgr-secondary{
-  
+  display: flex;
   width:55%;
   height: 55%;
   margin: auto;
   background: var(--theme-secondary-trans);
-  text-align:center;
-  padding-top: 5%;
+  justify-content: center;
+  
+  
   
   clip-path: circle(50% at 50% 50%);
 }
@@ -233,14 +234,23 @@ h3{
   height: 100%;
   
 }
-
-.logos{
-  
-  margin: auto;
-  width: 60%;
-  background: var(--theme-secondary-trans);
+.logos-container{
+  padding: 0;
+  position: absolute;
+  bottom: 0px;
+  margin-left: 15%;
+  width: 70%;
   border-radius: 10px;
+  
+  background-color: var(--theme-main);
+}
+.logos{
+  margin: 0;
   padding:3% 10%;
+  border-radius: 10px;
+  background: var(--theme-secondary-trans);
+  
+  
   text-align: center;
   
   
